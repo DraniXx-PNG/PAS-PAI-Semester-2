@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #EFE3C2;
+  color: #2c3e50;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #123524;
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(18, 53, 36, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  background: #85A947;
+  position: sticky;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: #123524;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 1.6rem;
+  font-size: 1rem;
+}
+
+nav a.active {
+  color: #3E7B27;
+}
+
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #123524;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.15rem;
+  color: #34495e;
+  text-align: justify;
+}
+
+.photo-container {
+  flex-shrink: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #85A947;
+  border: 3px solid #3E7B27;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #123524;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  font-size: 30px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002;
+}
+
+#back-to-top.show {
+  display: flex;
+}
+
+@media (max-width: 850px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
